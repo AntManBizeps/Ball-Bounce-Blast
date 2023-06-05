@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="preController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1000.0">
+         <image>
+            <Image url="@galaktyka.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="playButton" layoutX="389.0" layoutY="272.0" mnemonicParsing="false" onAction="#playClicked" prefHeight="95.0" prefWidth="223.0" style="-fx-background-radius: 10;" text="PLAY" textAlignment="CENTER">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="instructionButton" layoutX="389.0" layoutY="393.0" mnemonicParsing="false" onAction="#instructionClicked" prefHeight="95.0" prefWidth="223.0" style="-fx-background-radius: 10;" text="INSTRUCTION" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

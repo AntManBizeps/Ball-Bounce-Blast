@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="BackgroundBoard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1000.0">
+         <image>
+            <Image url="@galaktyka.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#63b021" height="678.0" layoutX="71.0" layoutY="59.0" stroke="BLACK" strokeType="INSIDE" width="858.0" />
+      <Pane fx:id="pitch" layoutX="75.0" layoutY="63.0" prefHeight="670.0" prefWidth="850.0" style="-fx-background-color: BLACK;">
+         <children>
+            <Line fx:id="line" endY="400.0" fill="#63b021" layoutX="425.0" layoutY="270.0" startY="-270.0" stroke="#63b021" style="-fx-stroke: WHITE;" />
+         </children></Pane>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="441.0" layoutY="40.0" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORE" textAlignment="CENTER" wrappingWidth="117.7294921875">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="score1" fill="WHITE" fontSmoothingType="LCD" layoutX="275.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="score2" fill="WHITE" fontSmoothingType="LCD" layoutX="725.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
